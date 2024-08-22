@@ -1,0 +1,87 @@
+
+.container {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+.container1 {
+    margin-left: 20px;
+}
+
+.container2 {
+    margin-left: 20px;
+}
+
+.container3 {
+    margin-left: 20px;
+}
+
+.button-container {
+    margin-left: 135px;
+    margin-top: 10px; /* Espaçamento superior opcional */
+}
+
+.text-container {
+    margin-top: 10px; /* Espaçamento superior opcional */
+}
+
+body {
+    font-family: "Lato", sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .sidebar {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.4s;
+    padding-top: 60px;
+  }
+  
+  .sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidebar a:hover {
+    color: #f1f1f1;
+  }
+  
+  .openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #111;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    position: fixed;
+    top: 10px;
+    left: 250px;
+    transition: 0.5s;
+    z-index: 1; /* Certifique-se de que o botão esteja acima do conteúdo */
+  }
+  
+  .openbtn:hover {
+    background-color: #444;
+  }
+  
+  .content {
+    transition: margin-left .5s;
+    padding: 16px;
+    margin-left: 250px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .sidebar {padding-top: 15px;}
+    .sidebar a {font-size: 18px;}
+  }
